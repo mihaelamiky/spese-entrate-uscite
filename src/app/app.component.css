@@ -1,0 +1,10 @@
+.entrate-container {
+    display: flex;
+    justify-content:center;
+    gap: 10%;
+
+  }
+  .entrata {
+    width: 50%;
+  }
+  

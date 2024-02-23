@@ -1,0 +1,33 @@
+<h2 style="color:brown">Uscite</h2>
+<div class="uscite">
+    <div class="new-uscite">
+        <div class="colore">
+            <h3>Aggiungi una nuova uscita</h3>
+            <tr>
+              NOME<input [(ngModel)]="newUscita.testo" placeholder="Testo"></tr>
+            <tr>
+              PREZZO
+              <input type="number" [(ngModel)]="newUscita.prezzo" placeholder="Prezzo"></tr>
+            <button style="color:rgb(238, 147, 147); background-color: red;" (click)="addNewUscita()">Aggiungi</button>
+        </div>
+        
+    </div>
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Prezzo</th>
+            <th>Elimina</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let u of uscite; let i = index" class="entrata">
+            <td class="colore2"> {{ u.id }}</td>
+            <td style="color: rgb(132, 36, 36);">{{ u.testo }}</td>
+            <td class="colore2">{{ u.prezzo }} €</td>
+            <td><button (click)="removeUscita(i)">X</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

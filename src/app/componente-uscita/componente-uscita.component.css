@@ -1,0 +1,47 @@
+.entrate {
+  margin-top: 20px;
+}
+.entrata {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f47a7a8c;
+}
+.entrata button {
+  background-color: #ff9999;
+  color: white;
+  border: none;
+  padding: 8px 15px; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+h2, h3 {
+  text-align: center;
+  font-family: "cursive", cursive;
+}
+.colore2 {
+  background-color: #da0d0d41;
+  color: rgb(121, 18, 18);
+  padding: 10px 10px;
+  border-radius: 5px; 
+  cursor:all-scroll;
+}
+.colore {
+  background-color: #da0d0d82; 
+  color:  rgb(121, 18, 18); 
+  padding: 20px 20px; 
+  border-radius: 5px; 
+  display:flexbox;
+  justify-content: space-between; 
+  align-items:baseline;
+  width: 300px; 
+  margin-bottom: 10px; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease;
+}
+
+.colore:hover {
+  background-color: #902222; 
+  color: white; 
+}

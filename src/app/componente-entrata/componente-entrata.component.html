@@ -1,0 +1,33 @@
+<h2 style="color: green;">Entrate</h2>
+<div class="entrate">
+    <div class="new-entrata">
+        <div class="colore">
+            <h3>Aggiungi una nuova entrata</h3>
+            <tr>
+              NOME<input [(ngModel)]="newEntrata.testo" placeholder="Testo"></tr>
+            <tr>
+              PREZZO<input  type="number" [(ngModel)]="newEntrata.prezzo" placeholder="Prezzo"></tr>
+            <button style="color: aquamarine; background-color: green;" (click)="addNewEntrata()">Aggiungi</button>
+        </div>
+        
+    </div>
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Prezzo</th>
+            <th>Elimina</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let e of entrate; let i = index" class="entrata">
+            <td class="colore2"> {{ e.id }}</td>
+            <td style="color: rgb(41, 132, 36);">{{ e.testo }}</td>
+            <td class="colore2">{{ e.prezzo }} €</td>
+            <td><button (click)="removeEntrata(i)">X</button></td>
+          </tr>
+        </tbody>
+      </table>
+      
+</div>
